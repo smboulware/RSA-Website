@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Encrypt
+{% endblock %}
+
+{% block main %}
+    <main class="container py-5 text-center">
+        <p>
+            Input the e and n for the person you want to send your message to, then type your message below!
+        </p>
+        <form action="/encrypt" method="post">
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="e" name="e" placeholder="e" type="text">
+            </div>
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="n" name="n" placeholder="n" type="text">
+            </div>
+            <div class="mb-3">
+                <textarea autocomplete="off" autofocus class="form-control" rows="4" id="message" name="message" placeholder="Type your message here." type="text" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Encrypt</button>
+        </form>
+    </main>
+{% endblock %}

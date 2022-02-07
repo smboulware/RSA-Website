@@ -1,0 +1,37 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+body
+{
+    background-color: #c3c0c4;
+}
+
+.btn-primary {
+    color: #d2cfd4;
+    background-color: #5a4f61;
+    border-color: #534a59
+}
+
+.btn-primary:hover {
+    color: #bab7bd;
+    background-color: #433c47;
+    border-color: #312c33
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #d2cfd4;
+    background-color: #5a4f61;
+    border-color: #534a59
+}
+
+.wrap {
+    overflow-wrap: break-word;
+}

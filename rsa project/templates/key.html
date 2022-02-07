@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Key
+{% endblock %}
+
+{% block main %}
+    <main class="container py-5 text-center">
+        <p>
+            Click the button below to generate your key! Rememeber d, and give e and n to anyone you want to send a message to you.
+        </p>
+        <form action="/key" method="post">
+            <button class="btn btn-primary" type="submit">Generate Key</button>
+        </form>
+    </main>
+{% endblock %}

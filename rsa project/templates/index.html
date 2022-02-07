@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <main class="container py-5 text-center">
+        <p>
+            Welcome! This website allows you to generate an RSA key for yourself, then encode and decode messages using it. Go to the generate key tab to generate a key for yourself! The values e and n are the public key, while the values d and n are the private key. As it sounds, the public key can be seen by everyone, but you should keep your private key a secret. Anyone can use the public key to encrypt a message for you in the encrypt tab. Then you can input that encoded message, along with your private key, into the decrypt tab to read the message.
+        </p>
+    </main>
+{% endblock %}

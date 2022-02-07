@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Key Output
+{% endblock %}
+
+{% block main %}
+    <main class="container py-5 text-center">
+        <p>
+            Your key is below! Rememeber d, and give e and n to anyone you want to send a message to you.
+        </p>
+        <div class="wrap">
+            d = {{ d }}
+        </div>
+        <div class="wrap">
+            e = {{ e }}
+        </div>
+        <div class="wrap">
+            n = {{ n }}
+        </div>
+    </main>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <main class="container py-5 text-center">
+        <p>
+            Input your d, n, and the message you want decrypted!
+        </p>
+        <form action="/decrypt" method="post">
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="d" name="d" placeholder="d" type="text">
+            </div>
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="n" name="n" placeholder="n" type="text">
+            </div>
+            <div class="mb-3">
+                <textarea autocomplete="off" autofocus class="form-control" rows="4" id="message" name="message" placeholder="Type your message here." type="text" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Decrypt</button>
+        </form>
+    </main>
+{% endblock %}
